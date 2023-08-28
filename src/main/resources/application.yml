@@ -1,0 +1,12 @@
+
+spring:
+  datasource:
+    url: jdbc:h2:mem:testdb
+    username: ${MYSQL_USERNAME:root}
+    password: ${MYSQL_PASSWORD:root}
+    driverClassName: org.h2.Driver
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.H2Dialect
+  jpa.hibernate.ddl_auto: create
